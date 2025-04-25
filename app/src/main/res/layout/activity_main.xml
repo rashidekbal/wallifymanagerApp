@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center">
+           <EditText
+               android:id="@+id/category"
+               android:layout_width="wrap_content"
+               android:layout_height="45dp"
+               android:ems="10"
+               android:hint="category"
+               android:textAlignment="center"/>
+           <EditText
+               android:id="@+id/page"
+               android:ems="4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="page"
+               android:inputType="number"
+               android:text="1"
+               />
+           <CheckBox
+               android:id="@+id/flag"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+
+       <Button
+           android:layout_marginTop="20dp"
+           android:id="@+id/addLinks_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Add Links"/>
+       <Button
+           android:id="@+id/update_btn"
+           android:layout_marginTop="45dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/update_database"
+           />
+
+   </LinearLayout>
+    <ProgressBar
+        android:id="@+id/spinner"
+        android:background="#CC9999"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="#FAF9F9"
+        android:visibility="gone"
+        />
+
+
+
+</RelativeLayout>

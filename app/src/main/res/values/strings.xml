@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">wallifyManager</string>
+    <string name="update_database">Update Database</string>
+</resources>
